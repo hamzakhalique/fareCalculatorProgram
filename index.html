@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="content">
+      <h1>TTC Fare Calculator</h1>
+      <p class="mb-1em">Total fare price for trip:</p>
+      <p id="fare-el" class="mb-025em fs-3rem">$0</p>
+      <div class="actionItems">
+        <input
+          type="number"
+          id="age-el"
+          placeholder="Enter your age here"
+          min="0"
+          max="100"
+        />
+        <input type="text" id="proof-of-age-el" placeholder="Valid ID? (y/n)" />
+        <input
+          type="number"
+          id="num-of-trips-el"
+          placeholder="# of trips"
+          min="1"
+        />
+        <input
+          type="text"
+          id="time-limit-el"
+          placeholder="All trips under 2 hrs? (y/n)"
+        />
+        <input
+          type="number"
+          id="num-of-trips-under-2hrs"
+          placeholder="# of trips under 2 hrs"
+        />
+        <button id="calculate-fare" onclick="calculateFare()">
+          calculate fare
+        </button>
+        <p id="type-of-fare" class="mb-1em mt-1em fs-075rem"></p>
+        <p class="mb-1em mt-1em fs-075rem">
+          *Please note that this fare is only an estimate. Real fare values
+          might be more or less depending on other factors
+        </p>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
